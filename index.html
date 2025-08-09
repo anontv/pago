@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia Informática Remota</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .planes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .plan {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .plan h2 {
+            color: #0073e6;
+        }
+        .precio {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .boton-pago {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .boton-pago:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+        .boton-pago img {
+            height: 18px;
+        }
+        .bizum-btn {
+            background-color: #00BFA6;
+        }
+        .bizum-btn:hover {
+            background-color: #009E8A;
+        }
+        @media (max-width: 600px) {
+            .planes {
+                flex-direction: column;
+                align-items: center;
+            }
+            .plan {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Servicios de Asistencia Informática Remota</h1>
+    <p>Soluciones rápidas, seguras y efectivas desde la comodidad de tu hogar</p>
+</header>
+
+<section class="planes">
+    <div class="plan">
+        <h2>Plan Básico</h2>
+        <p>10 minutos de asistencia remota</p>
+        <div class="precio">10€</div>
+        <div class="botones">
+            <a class="boton-pago" href="https://secure.monei.com/payments/70f60d82f830acd98979807ff3d8d95e66003fdf">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"> Tarjeta
+            </a>
+            <a class="boton-pago bizum-btn" href="https://tuenlace.com/plan10-bizum">
+                <img src="data:image/png;base64,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" alt="Bizum"> Bizum
+            </a>
+        </div>
+    </div>
+
+    <div class="plan">
+        <h2>Plan Estándar</h2>
+        <p>60 minutos de asistencia remota</p>
+        <div class="precio">50€</div>
+        <div class="botones">
+            <a class="boton-pago" href="https://secure.monei.com/payments/8ad7c02675c2cfcf38647f2c13f3d81e5fae6a48">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"> Tarjeta
+            </a>
+            <a class="boton-pago bizum-btn" href="https://tuenlace.com/plan50-bizum">
+                <img src="data:image/png;base64,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" alt="Bizum"> Bizum
+            </a>
+        </div>
+    </div>
+
+    <div class="plan">
+        <h2>Plan Premium</h2>
+        <p>120 minutos de asistencia remota</p>
+        <div class="precio">80€</div>
+        <div class="botones">
+            <a class="boton-pago" href="https://secure.monei.com/payments/61f3962f72ba8b11ff9c827f19b93136491c87bb">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"> Tarjeta
+            </a>
+            <a class="boton-pago bizum-btn" href="https://tuenlace.com/plan80-bizum">
+                <img src="data:image/png;base64,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" alt="Bizum"> Bizum
+            </a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
